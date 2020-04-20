@@ -20,18 +20,18 @@ public class MainActivity extends AppCompatActivity {
 
         DatabaseHandler databaseHandler = new DatabaseHandler(MainActivity.this);
 
-        databaseHandler.addProduct(new Product("Umano","https://umano.com/"));
-        databaseHandler.addProduct(new Product("Beard Head","https://beardhead.com/"));
-        databaseHandler.addProduct(new Product("Ice Shaker","https://www.iceshaker.com/"));
-        databaseHandler.addProduct(new Product("Ice Shaker","https://www.iceshaker.com/"));
-        databaseHandler.addProduct(new Product("Prx Performance","https://prxperformance.com/"));
-        databaseHandler.addProduct(new Product("Piper Wai","https://www.piperwai.com/"));
-        databaseHandler.addProduct(new Product("Love Pop","https://www.lovepopcards.com/"));
-        databaseHandler.addProduct(new Product("Nohbo Dops","https://nohbodrops.com/"));
-        databaseHandler.addProduct(new Product("Benjilock","https://benjilock.com/"));
-        databaseHandler.addProduct(new Product("R. Riveter","https://www.rriveter.com/"));
-        databaseHandler.addProduct(new Product("Slyde Handboards","https://www.slydehandboards.com/"));
-        databaseHandler.addProduct(new Product("Grip Clean","https://www.gripclean.com/"));
+//        databaseHandler.addProduct(new Product("Umano","https://umano.com/"));
+//        databaseHandler.addProduct(new Product("Beard Head","https://beardhead.com/"));
+//        databaseHandler.addProduct(new Product("Ice Shaker","https://www.iceshaker.com/"));
+//        databaseHandler.addProduct(new Product("Ice Shaker","https://www.iceshaker.com/"));
+//        databaseHandler.addProduct(new Product("Prx Performance","https://prxperformance.com/"));
+//        databaseHandler.addProduct(new Product("Piper Wai","https://www.piperwai.com/"));
+//        databaseHandler.addProduct(new Product("Love Pop","https://www.lovepopcards.com/"));
+//        databaseHandler.addProduct(new Product("Nohbo Dops","https://nohbodrops.com/"));
+//        databaseHandler.addProduct(new Product("Benjilock","https://benjilock.com/"));
+//        databaseHandler.addProduct(new Product("R. Riveter","https://www.rriveter.com/"));
+//        databaseHandler.addProduct(new Product("Slyde Handboards","https://www.slydehandboards.com/"));
+//        databaseHandler.addProduct(new Product("Grip Clean","https://www.gripclean.com/"));
 
 
         //delete single product
