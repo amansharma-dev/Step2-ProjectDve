@@ -55,7 +55,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 
         ContentValues contentValues = new ContentValues();
         contentValues.put(Util.COLUMN_NAME,product.getName());
-        contentValues.put(Util.COLUMN_LINK,product.getId());
+        contentValues.put(Util.COLUMN_LINK,product.getLink());
 
         sqLiteDatabase.insert(Util.DATABASE_TABLE_NAME,null,contentValues);
 
@@ -102,5 +102,27 @@ public class DatabaseHandler extends SQLiteOpenHelper {
             }while(cursor.moveToNext());
         }
         return productList;
+    }
+
+    //delete
+    public void deleteSingleProduct(Product product){
+        SQLiteDatabase sqLiteDatabase = this.getReadableDatabase();
+        sqLiteDatabase.delete(Util.DATABASE_TABLE_NAME,Util.COLUMN_ID+"=?",new String[]{String.valueOf(product.getId())});
+        sqLiteDatabase.close();
+    }
+
+    //delete--deleteAllProducts // stackOverFlow ;)
+    public void deleteAllProducts(){
+        SQLiteDatabase  sqLiteDatabase = this.getReadableDatabase();
+        sqLiteDatabase.execSQL("delete from "+Util.DATABASE_TABLE_NAME);
+    }
+
+    //get count
+
+    public int getCount(){
+        SQLiteDatabase sqLiteDatabase = this.getReadableDatabase();
+        String GET_COUNT = " SELECT * FROM "+ Util.DATABASE_TABLE_NAME;
+        Cursor cursor = sqLiteDatabase.rawQuery(GET_COUNT,null);
+        return cursor.getCount();
     }
 }
